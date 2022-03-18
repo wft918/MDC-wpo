@@ -1,0 +1,48 @@
+{
+  "name": "visualization",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "node install-easyPlayer.js"
+  },
+  "dependencies": {
+    "@authing/vue-ui-components": "^2.4.47",
+    "@easydarwin/easyplayer": "^4.0.5",
+    "@jiaminghi/data-view": "^2.10.0",
+    "@videojs/http-streaming": "^2.10.2",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "echarts": "^5.1.2",
+    "element-ui": "^2.15.5",
+    "highcharts": "^9.3.0",
+    "jquery": "^3.6.0",
+    "mqtt": "^3.0.0",
+    "video.js": "^7.14.3",
+    "videojs-contrib-hls": "^5.15.0",
+    "vue": "^2.6.11",
+    "vue-cookies": "^1.7.4",
+    "vue-router": "^3.2.0",
+    "vue-seamless-scroll": "^1.1.23",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "copy-webpack-plugin": "^5.1.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.2.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

@@ -1,0 +1,43 @@
+/*
+ *采煤工作面配置
+ */
+
+export default [
+  {
+    name:'自动化主页面',
+    id:'1',
+    url:'http://www.baidu.com',
+    children:[]
+  },
+  {
+    name:'采煤机主页面',
+    id:'2',
+    url:'http://www.bing.com',
+    children:[]
+  },
+  {
+    name:'一键启停控制主页面',
+    id:'3',
+    url:'http://www.taobao.com',
+    children:[
+        {
+            name:'自动化主页面',
+            id:'1',
+            usl:'http://www.baidu.com',
+            children:[]
+        },
+        {
+            name:'采煤机主页面',
+            id:'2',
+            url:'http://www.bing.com',
+            children:[]
+        },
+        {
+            name:'一键启停控制主页面',
+            id:'3',
+            url:'http://www.taobao.com',
+            children:[]
+        }
+    ]
+  }
+]

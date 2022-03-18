@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        EasyPlayer
+    </title>
+    <!-- <link rel="icon" href="./favicon.ico"> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+</head>
+
+<body>
+    <!-- <easy-player video-url="rtmp://223.95.116.30:10935/hls/stream_1" snapdownload="true" stretch="true" live="true" aspect="400:300" debug="true"
+    isresolution="true" resolution="yh,fhd,hd,sd" resolutiondefault="yh"></easy-player> -->
+    <!-- <easy-player video-url="rtmp://live.hkstv.hk.lxdns.com/live/hks2" live="true" show-custom-button="true"></easy-player> -->
+    <!-- <easy-player video-url="rtmp://rtmp01open.ys7.com/openlive/f07b2d60f8f74d92a8413facbb64e7f2" ></easy-player> -->
+    <!-- <easy-player video-url="http://demo.easydss.com:10080/hls/ted2/ted2_live.m3u8?tokenDemo=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTk2NDA3MTcsInB3IjoiZGVtbyIsInRtIjoxNTk5NjQwNTM3LCJ1biI6ImRlbW8ifQ.FP9zSXyJZOJVBdQQ0PWwwh0S0vJCm5woCKw-sq1sjjE" live="true" show-custom-button="true"></easy-player> -->
+    <easy-player id="player" show-custom-button="true" poster="http://demo.easygbs.com:10000/snap/34020000001130000001/34020000001320000001.jpg?t=1627376642858081900"></easy-player>
+    <!-- <input type="text" id="ipt">  -->
+    <br>
+    <br>
+    <button id="but1">播放FLV1</button>
+    <button id="but2">播放M3U82</button>
+    <button id="but3">播放RTMP3</button>
+    <button id="but4">播放WS4</button>
+    <button id="but5">播放MP45</button>
+    <button id="but6">播放WEBRTC6</button>
+    <button id="but2652">强制265播放FLV1</button>
+    <script>
+        var player = document.getElementById('player')
+            // var ipt = document.getElementById('ipt')
+        var but1 = document.getElementById('but1')
+        var but2 = document.getElementById('but2')
+        var but3 = document.getElementById('but3')
+        var but4 = document.getElementById('but4')
+        var but5 = document.getElementById('but5')
+        var but6 = document.getElementById('but6')
+        var but2652 = document.getElementById('but2652')
+        but1.onclick = function(e) {
+            player.setAttribute('decode-wasm', true)
+            // player.setAttribute('live', true)
+            // player.setAttribute('video-url', 'webrtc://demo.easygbs.com:10001/rtc/34020000001110000051_0200000001')
+            player.setAttribute('video-url', 'http://125.74.158.94:7086/live/cameraid/1000012%240/substream/2.m3u8')
+        }
+        but2.onclick = function(e) {
+            player.setAttribute('decode-wasm', false)
+            player.setAttribute('live', true)
+            player.setAttribute('video-url', 'http://demo.easygbs.com:10000/record/34020000001320000003_34020000001310000001/20210506/20210506160001/34020000001320000003_34020000001310000001_record.m3u8?token=56bf0ceede986fa6de4d88b32287888d')
+        }
+        but3.onclick = function(e) {
+            player.setAttribute('decode-wasm', false)
+            player.setAttribute('live', true)
+            player.setAttribute('video-url', 'rtmp://127.0.0.1:10035/hls/333')
+        }
+        but4.onclick = function(e) {
+            player.setAttribute('decode-wasm', false)
+            player.setAttribute('live', true)
+            player.setAttribute('video-url', 'ws://demo.easydss.com:10086/ws-flv/hls/roUWrRznR.flv')
+        }
+        but5.onclick = function(e) {
+            player.setAttribute('decode-wasm', false)
+            player.setAttribute('live', false)
+            player.setAttribute('video-url', 'http://192.168.99.167:8080/123.mp4')
+        }
+        but6.onclick = function(e) {
+            player.setAttribute('decode-wasm', false)
+            player.setAttribute('live', true)
+            player.setAttribute('video-url', 'webrtc://demo.easygbs.com:10001/rtc/34020000001320000217_0200000001?token=8f4b4a920beded3a8714ecff0fd628f4')
+                // webrtc://192.168.99.167:10001/rtc/34020000001320000001_0200000001?token=0d11131bca63b358782436f53bbba674
+        }
+        but2652.onclick = function(e) {
+            player.setAttribute('decode-wasm', true)
+            player.setAttribute('live', true)
+            player.setAttribute('video-url', 'http://demo.easygbs.com:10001/hls/34020000001110000051_0200000001/34020000001110000051_0200000001_live.m3u8?token=813caa119ac6d1ae8981e45b5cd2575e')
+        }
+    </script>
+<script type="text/javascript" src="EasyPlayer-element.min.js"></script></body>
+
+</html>
